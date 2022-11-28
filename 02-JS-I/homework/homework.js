@@ -10,16 +10,13 @@ const nuevoNum = 9;
 const nuevoBool = false;
 
 // Resuelve el siguiente problema matemático:
-const nuevaResta = 10 - null === 5;
-      nuevaResta = false;
+const nuevaResta = 10 - 5 === 5;
+      
+// Resuelve el siguiente problema matemático:
+const nuevaMultiplicacion = 10 * 4 === 40 ;
 
 // Resuelve el siguiente problema matemático:
-const nuevaMultiplicacion = 10 * null === 40 ;
-      nuevaMultiplicacion = false;
-
-// Resuelve el siguiente problema matemático:
-const nuevoModulo = 21 % 5 === null;    
-nuevoModulo = flase
+const nuevoModulo = 21 % 5 === 1;    
 
 
 // En los próximos 22 problemas, deberás completar la función.
@@ -31,7 +28,6 @@ nuevoModulo = flase
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
-  str = "Devolviendo Lo Solicitado";
   return str;
   
 }
@@ -116,7 +112,7 @@ function mayorQueCincuenta(num) {
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
-  var resto = x % y;
+  return  x % y;
   
 }
 
@@ -189,10 +185,10 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  if (num > 0) {
-    return "Es Positivo";
-  } else if (num < 0) {
-    return "Es Negativo"
+  if (numero > 0) {
+    return "Es positivo";
+  } else if (numero < 0) {
+    return "Es negativo"
   }else{
     return false;
   }
@@ -203,7 +199,7 @@ function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
-  return srt+ "!";
+  return str + "!";
 }
 
 function combinarNombres(nombre, apellido) {
@@ -219,7 +215,7 @@ function obtenerSaludo(nombre) {
   // "Martin" -> "Hola Martin!"
   // Tu código:
 
-  return "hola" + " " + nombre +"!";
+  return "Hola" + " " + nombre +"!";
   
 }
 
@@ -263,27 +259,22 @@ function esVocal(letra){
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
   if (letra.length > 1) {
-    return "Dato Incorreto";
-  } else {
-    switch (letra) {
-      case "a":
-        return "Es Vocal";
-        break;
-      case "e":
-        return "Es Vocal";
-        break;
-      case "i":
-        return "Es Vocal";
-        break;
-      case "o":
-        return "Es Vocal";
-        break;
-      case "u":
-      return "Es Vocal";
-      break;
-      default:"Dato Incorrecto";
-    }
+    return "Dato incorrecto";
+  } else  if (letra === "a" || letra === "A") {
+    return "Es vocal"
+  } else  if (letra === "e" || letra === "E") {
+    return "Es vocal"
+  } else  if (letra === "i" || letra === "I") {
+    return "Es vocal"
+  } else  if (letra === "o" || letra === "O") {
+    return "Es vocal"
+  } else  if (letra === "u" || letra === "U") {
+    return "Es vocal"
+  } else  {
+    return "Dato incorrecto";
   }
+    
+  
   
 }
 
